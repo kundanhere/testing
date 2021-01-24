@@ -1,5 +1,6 @@
 .hero {
-  background: url('/src/assets/hero-gradient.svg') no-repeat center center;
+  background: url('/testing/src/assets/hero-gradient.svg') no-repeat center
+    center;
   background-size: contain;
   overflow: overlay;
   padding: 36px 0px;
@@ -11,8 +12,8 @@
     width: 150px;
     height: 150px;
     background: #eaf9fa
-      url('/src/assets/emoji-icons/apple-profile-img-600x600.png') no-repeat
-      center center;
+      url('/testing/src/assets/emoji-icons/apple-profile-img-600x600.png')
+      no-repeat center center;
     background-size: 70%;
     margin-bottom: 26px;
     border-radius: 50%;
@@ -27,7 +28,7 @@
       right: -$LargeFontSize;
       width: $LargeFontSize;
       height: $LargeFontSize;
-      background: url('/src/assets/emoji-icons/sign-of-the-horns_1f918.png')
+      background: url('/testing/src/assets/emoji-icons/sign-of-the-horns_1f918.png')
         no-repeat center center;
       background-size: cover;
     }

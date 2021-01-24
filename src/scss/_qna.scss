@@ -5,7 +5,7 @@
     // content: '';
     width: 380px;
     height: 380px;
-    background: url('/src/assets/circle.svg') no-repeat center center;
+    background: url('/testing/src/assets/circle.svg') no-repeat center center;
     background-size: contain;
     position: absolute;
     top: 200px;
@@ -17,7 +17,7 @@
     // content: '';
     width: 340px;
     height: 340px;
-    background: url('/src/assets/circle.svg') no-repeat center center;
+    background: url('/testing/src/assets/circle.svg') no-repeat center center;
     background-size: contain;
     transform: rotate(130deg);
     position: absolute;
@@ -81,7 +81,7 @@
         color: var(--cod-gray);
       }
       button.accordion::after {
-        content: url('/src/assets/icons8-sort-down-30.png');
+        content: url('/testing/src/assets/icons8-sort-down-30.png');
         transform: scale(0.45);
         float: right;
         transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 6ms;

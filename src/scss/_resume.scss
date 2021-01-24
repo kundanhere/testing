@@ -10,7 +10,8 @@
     width: 540px;
     height: 540px;
     z-index: -1;
-    background: url('/src/assets/big-circle.svg') no-repeat center center;
+    background: url('/testing/src/assets/big-circle.svg') no-repeat center
+      center;
     background-size: contain;
     & > div {
       width: 100%;
@@ -38,7 +39,7 @@
   .subtitle-link {
     // position: relative;
     // &::after {
-    //   content: url('/src/assets/arrow-up-right.svg');
+    //   content: url('/testing/src/assets/arrow-up-right.svg');
     //   position: absolute;
     //   vertical-align: baseline;
     //   transform: scale(0.8);

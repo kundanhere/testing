@@ -84,23 +84,28 @@
     z-index: -1;
   }
   &-shape-1::before {
-    background: url('/src/assets/underline-shape-1.svg') no-repeat center bottom;
+    background: url('/testing/src/assets/underline-shape-1.svg') no-repeat
+      center bottom;
     bottom: -10px;
   }
   &-shape-2::before {
-    background: url('/src/assets/underline-shape-2.svg') no-repeat center bottom;
+    background: url('/testing/src/assets/underline-shape-2.svg') no-repeat
+      center bottom;
     bottom: -2px;
   }
   &-shape-3::before {
-    background: url('/src/assets/underline-shape-3.svg') no-repeat center bottom;
+    background: url('/testing/src/assets/underline-shape-3.svg') no-repeat
+      center bottom;
     bottom: -2px;
   }
   &-shape-4::before {
-    background: url('/src/assets/underline-shape-4.svg') no-repeat center bottom;
+    background: url('/testing/src/assets/underline-shape-4.svg') no-repeat
+      center bottom;
     bottom: -2px;
   }
   &-shape-5::before {
-    background: url('/src/assets/underline-shape-5.svg') no-repeat center bottom;
+    background: url('/testing/src/assets/underline-shape-5.svg') no-repeat
+      center bottom;
     bottom: -4px;
   }
 }
