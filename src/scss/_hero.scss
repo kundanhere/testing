@@ -11,10 +11,9 @@
   &__img {
     width: 150px;
     height: 150px;
-    background: #eaf9fa
-      url('/testing/src/assets/emoji-icons/apple-profile-img-600x600.png')
+    background: #eaf9fa url('/testing/src/assets/emoji-icons/Profile-image.png')
       no-repeat center center;
-    background-size: 70%;
+    background-size: cover;
     margin-bottom: 26px;
     border-radius: 50%;
   }
