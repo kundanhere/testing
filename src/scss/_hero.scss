@@ -1,0 +1,45 @@
+.hero {
+  background: url('/src/assets/hero-gradient.svg') no-repeat center center;
+  background-size: contain;
+  overflow: overlay;
+  padding: 36px 0px;
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__img {
+    width: 150px;
+    height: 150px;
+    background: #eaf9fa
+      url('/src/assets/emoji-icons/apple-profile-img-600x600.png') no-repeat
+      center center;
+    background-size: 70%;
+    margin-bottom: 26px;
+    border-radius: 50%;
+  }
+  &__msg {
+    position: relative;
+    margin-bottom: 32px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -$LargeFontSize;
+      width: $LargeFontSize;
+      height: $LargeFontSize;
+      background: url('/src/assets/emoji-icons/sign-of-the-horns_1f918.png')
+        no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &__headline {
+    margin-bottom: 26px;
+  }
+  &__intro {
+    font-size: $MediumFontSize;
+    margin-bottom: 26px;
+  }
+  &__btn:hover {
+    transform: scale(0.96);
+  }
+}
