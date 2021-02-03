@@ -10,7 +10,7 @@
     <title>Kundan Gupta</title>
   </head>
   <body class="body">
-    <div id="vs-section" class="vs-section">
+    <div id="vs-section">
       <header class="header">
         <nav class="nav flex flex-jc-sb flex-ai-c">
           <a href="/testing" class="nav__logo" title="Kundan">
@@ -477,7 +477,7 @@
               ><br />people normally ask me:
             </h3>
             <div class="container flex flex-d-c flex-ai-c text-center mr-auto">
-              <button class="accordion flex flex-jc-sb flex-ai-c active">
+              <button class="accordion flex flex-jc-sb flex-ai-c">
                 What is your work discipline?
               </button>
               <div class="panel">
@@ -489,7 +489,7 @@
                   I built end to end (UI, back-end business logic, etc).
                 </p>
               </div>
-              <button class="accordion flex flex-jc-sb flex-ai-c">
+              <button class="accordion flex flex-jc-sb flex-ai-c active">
                 Do you work on more than one project?
               </button>
               <div class="panel">
@@ -538,17 +538,10 @@
       </section>
     </div>
     <!-- Vendor JS -->
-    <script src="/testing/src/vendor/js/smooth-scroll.min.js"></script>
+    <script defer src="/testing/src/vendor/js/smooth-scroll.min.js"></script>
     <script defer src="/testing/src/vendor/js/gsap-3.4.0.min.js"></script>
     <script defer src="/testing/src/vendor/js/isotope-3.0.6.min.js"></script>
     <!-- app.js -->
-    <script src="/testing/src/js/index.js"></script>
-    <script>
-      let scroll = new Smooth({
-        native: false,
-        preload: true,
-      });
-      // scroll.init();
-    </script>
+    <script defer src="/testing/src/js/index.js"></script>
   </body>
 </html>

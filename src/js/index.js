@@ -63,8 +63,27 @@
     });
   };
 
+  // @desc init smooth scroll on Extra large devices (large laptops and desktops, 1200px and up)
+  const initSmoothScroll = () => {
+    let winSize = window.innerWidth;
+    let vsSection = select('#vs-section');
+
+    if (winSize > 768) {
+      vsSection.classList.add('vs-section');
+
+      let scroll = new Smooth({
+        native: false,
+        preload: true,
+      });
+      scroll.init();
+    } else {
+      vsSection.classList.remove('vs-section');
+    }
+  };
+
   // @desc invoke methods
   const init = () => {
+    initSmoothScroll();
     initIsotope();
     initAccordion();
   };
