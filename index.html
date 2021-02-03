@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="public" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- custom css -->
     <link rel="stylesheet" href="/testing/dist/style.min.css" />
@@ -15,7 +16,7 @@
           <a href="/testing" class="nav__logo" title="Kundan">
             <img src="/testing/src/assets/signature-logo.svg" alt="site-logo" />
           </a>
-          <ul class="nav__links flex">
+          <ul class="nav__links flex hidden-sm">
             <li><a href="#works">Works</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -75,7 +76,7 @@
               If you’ve got a project you’d like to work on with me just get
               in-tuned and that we can get to work!
             </p>
-            <div class="dividernav component">
+            <div class="dividernav component hidden-sm">
               <div class="component-content"></div>
             </div>
           </div>
@@ -89,7 +90,7 @@
           <div class="flex flex-wrap flex-jc-sa flex-ai-c">
             <div class="card">
               <img
-                src="/testing/src/assets/emoji-icons/direct-hit_1f3af.png"
+                src="/testing/src/assets/emoji-icons/apple-direct-hit-emoji.png"
                 alt="apple-direct-hit-emoji"
               />
               <h5 class="subtitle-2 pt-0">Strategy & Direction</h5>
@@ -100,7 +101,7 @@
             </div>
             <div class="card">
               <img
-                src="/testing/src/assets/emoji-icons/writing-hand_270d-fe0f.png"
+                src="/testing/src/assets/emoji-icons/apple-writing-hand-emoji.png"
                 alt="apple-writing-hand-emoji"
               />
               <h5 class="subtitle-2 pt-0">UI/UX Design</h5>
@@ -111,8 +112,8 @@
             </div>
             <div class="card">
               <img
-                src="/testing/src/assets/emoji-icons/man-technologist-light-skin-tone_1f468-1f3fb-200d-1f4bb.png"
-                alt="apple-man-technologist-emoji"
+                src="/testing/src/assets/emoji-icons/apple-man-technologist-light-skin-tone-emoji.png"
+                alt="apple-man-technologist-light-skin-tone-emoji"
               />
               <h5 class="subtitle-2 pt-0">Product Development</h5>
               <p class="caption">
@@ -144,7 +145,10 @@
           <div class="grid">
             <div class="grid__item popular">
               <figure class="grid__item__thumbnail">
-                <img src="/testing/src/assets/portfolio/smoothies.png" />
+                <img
+                  src="/testing/src/assets/portfolio/smoothies-296x220.png"
+                  alt="smoothies"
+                />
               </figure>
               <div class="grid__item__details flex flex-jc-sb flex-ai-c">
                 <div class="flex-wrap">
@@ -161,7 +165,10 @@
             </div>
             <div class="grid__item grid__item-height2 popular old">
               <figure class="grid__item__thumbnail">
-                <img src="/testing/src/assets/portfolio/sales-app.png" />
+                <img
+                  src="/testing/src/assets/portfolio/sales-app-300x300.png"
+                  alt="sales-app"
+                />
               </figure>
               <div class="grid__item__details flex flex-jc-sb flex-ai-c">
                 <div class="flex-wrap">
@@ -178,7 +185,10 @@
             </div>
             <div class="grid__item latest">
               <figure class="grid__item__thumbnail">
-                <img src="/testing/src/assets/portfolio/storybook.png" />
+                <img
+                  src="/testing/src/assets/portfolio/storybook-296x220.png"
+                  alt="storybook"
+                />
               </figure>
               <div class="grid__item__details flex flex-jc-sb flex-ai-c">
                 <div class="flex-wrap">
@@ -195,7 +205,10 @@
             </div>
             <div class="grid__item popular old">
               <figure class="grid__item__thumbnail">
-                <img src="/testing/src/assets/portfolio/softdoc-music-2.png" />
+                <img
+                  src="/testing/src/assets/portfolio/softdoc-music-296x220.png"
+                  alt="softdoc-music"
+                />
               </figure>
               <div class="grid__item__details flex flex-jc-sb flex-ai-c">
                 <div class="flex-wrap">
@@ -212,7 +225,10 @@
             </div>
             <div class="grid__item grid__item-height2 upcoming">
               <figure class="grid__item__thumbnail">
-                <img src="/testing/src/assets/portfolio/pikmovie.png" />
+                <img
+                  src="/testing/src/assets/portfolio/pikmovie-300x300.png"
+                  alt="pikmovie"
+                />
               </figure>
               <div class="grid__item__details flex flex-jc-sb flex-ai-c">
                 <div class="flex-wrap">
@@ -224,7 +240,10 @@
             </div>
             <div class="grid__item latest">
               <figure class="grid__item__thumbnail">
-                <img src="/testing/src/assets/portfolio/pikmovie-design.png" />
+                <img
+                  src="/testing/src/assets/portfolio/pikmovie-design-296x220.png"
+                  alt="pikmovie-design"
+                />
               </figure>
               <div class="grid__item__details flex flex-jc-sb flex-ai-c">
                 <div class="flex-wrap">
@@ -237,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section id="resume" class="resume">
+      <section id="resume" class="resume mr-auto">
         <div class="resume__background-shape">
           <div class="flex flex-jc-c flex-ai-c flex-d-c">
             <div class="flex-wrap">
@@ -453,12 +472,12 @@
               A few things
               <span
                 ><img
-                  src="/testing/src/assets/emoji-icons/face-with-rolling-eyes_1f644.png"
-                  alt="apple-emoji-face-with-rolling-eyes" /></span
+                  src="/testing/src/assets/emoji-icons/apple-face-with-rolling-eyes-emoji.png"
+                  alt="apple-face-with-rolling-eyes-emoji" /></span
               ><br />people normally ask me:
             </h3>
-            <div class="container mr-auto">
-              <button class="accordion active">
+            <div class="container flex flex-d-c flex-ai-c text-center mr-auto">
+              <button class="accordion flex flex-jc-sb flex-ai-c active">
                 What is your work discipline?
               </button>
               <div class="panel">
@@ -470,8 +489,7 @@
                   I built end to end (UI, back-end business logic, etc).
                 </p>
               </div>
-
-              <button class="accordion">
+              <button class="accordion flex flex-jc-sb flex-ai-c">
                 Do you work on more than one project?
               </button>
               <div class="panel">
@@ -480,8 +498,9 @@
                   and provides those hours and days to the people I work with.
                 </p>
               </div>
-
-              <button class="accordion">Ye sab bana lete ho?</button>
+              <button class="accordion flex flex-jc-sb flex-ai-c">
+                Ye sab bana lete ho?
+              </button>
               <div class="panel">
                 <p class="caption">HAAN..!</p>
               </div>
@@ -517,52 +536,6 @@
           </div>
         </div>
       </section>
-      <main class="maxwidth">
-        <!--  <div class="colors">
-          <div class="div div-1"></div>
-          <div class="div div-2"></div>
-          <div class="div div-3"></div>
-          <div class="div div-4"></div>
-          <div class="div div-5"></div>
-          <div class="div div-6"></div>
-          <div class="div div-7"></div>
-          <div class="div div-8"></div>
-          <div class="div div-9"></div>
-          <div class="div div-10"></div>
-          <div class="div div-11"></div>
-        </div>
-        <div class="colors">
-          <div class="div div-12"></div>
-          <div class="div div-13"></div>
-          <div class="div div-14"></div>
-          <div class="div div-15"></div>
-          <div class="div div-16"></div>
-          <div class="div div-17"></div>
-          <div class="div div-18"></div>
-          <div class="div div-19"></div>
-          <div class="div div-20"></div>
-          <div class="div div-21"></div>
-          <div class="div div-22"></div>
-        </div>
-        <!--
-        <div class="component">
-          <div class="component-content"></div>
-        </div>
-        <h1>Hello World!</h1>
-        <h2>Hello World!</h2>
-        <h3>Hello World!</h3>
-        <h4>Hello World!</h4>
-        <h5>Hello World!</h5>
-        <h6>Hello World!</h6>
-        <p class="caption">Hello World!</p>
-        <p>Hello World!</p>
-        <br />
-        <h3>Resume</h3>
-        <h4>Work Experience</h4>
-        <h5>Uber</h5>
-        <h6>Product Designer</h6>
-        <p class="caption">August 2018 — December 2019</p> -->
-      </main>
     </div>
     <!-- Vendor JS -->
     <script src="/testing/src/vendor/js/smooth-scroll.min.js"></script>
@@ -575,7 +548,7 @@
         native: false,
         preload: true,
       });
-      scroll.init();
+      // scroll.init();
     </script>
   </body>
 </html>

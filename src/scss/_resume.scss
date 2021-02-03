@@ -3,6 +3,13 @@
   padding: 36px 0px;
   z-index: 1;
   margin-bottom: 180px;
+
+  @include media('screen', '<lg') {
+    width: 90%;
+    padding: 0;
+    margin-bottom: 36px;
+  }
+
   &__background-shape {
     position: absolute;
     bottom: -180px;
@@ -23,9 +30,28 @@
     .link:hover {
       color: #9ccbcf;
     }
+    @include media('screen', '<lg') {
+      display: none;
+    }
   }
   .row {
     margin: 36px auto;
+    @include media('screen', '<sm') {
+      margin: 26px auto;
+
+      &:not(:last-child) {
+        flex-direction: column-reverse;
+      }
+      .flex-5 {
+        flex: 1;
+        &:not(:last-child) {
+          margin-top: 26px;
+        }
+      }
+      .row.mr-0 > .col {
+        margin: 0;
+      }
+    }
   }
   .flex-wrap:not(:last-child) {
     margin-bottom: 26px;

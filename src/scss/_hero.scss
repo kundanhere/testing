@@ -7,15 +7,23 @@
   &__wrapper {
     width: 80%;
     margin: 0 auto;
+    @include media('screen', '<xs') {
+      width: 90%;
+    }
   }
   &__img {
     width: 150px;
     height: 150px;
-    background: #eaf9fa url('/testing/src/assets/emoji-icons/Profile-image.png')
-      no-repeat center center;
+    background: #eaf9fa
+      url('/testing/src/assets/emoji-icons/profile-image-600x600.png') no-repeat
+      center center;
     background-size: cover;
     margin-bottom: 26px;
     border-radius: 50%;
+    @include media('screen', '<sm') {
+      width: 120px;
+      height: 120px;
+    }
   }
   &__msg {
     position: relative;
@@ -27,9 +35,14 @@
       right: -$LargeFontSize;
       width: $LargeFontSize;
       height: $LargeFontSize;
-      background: url('/testing/src/assets/emoji-icons/sign-of-the-horns_1f918.png')
+      background: url('/testing/src/assets/emoji-icons/apple-sign-of-the-horns-emoji.png')
         no-repeat center center;
       background-size: cover;
+    }
+    @include media('screen', '<xs') {
+      h4 {
+        font-size: 18px;
+      }
     }
   }
   &__headline {
@@ -38,6 +51,9 @@
   &__intro {
     font-size: $MediumFontSize;
     margin-bottom: 26px;
+    @include media('screen', '<xs') {
+      font-size: $XSmallFontSize;
+    }
   }
   &__btn:hover {
     transform: scale(0.96);

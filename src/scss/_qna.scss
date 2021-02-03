@@ -29,6 +29,21 @@
   &__wrapper {
     .wrap {
       width: 70%;
+      @include media('screen', '>md', '<lg') {
+        width: 80%;
+      }
+      @include media('screen', '>sm', '<md') {
+        width: 90%;
+        h3 {
+          font-size: $XLargeFontSize;
+        }
+      }
+      @include media('screen', '<sm') {
+        width: 100%;
+        h3 {
+          font-size: $LargeFontSize;
+        }
+      }
 
       .heading {
         span img {
@@ -39,11 +54,15 @@
       .container {
         margin: 36px auto;
         font-weight: normal;
-        text-align: center;
+        @include media('screen', '<md') {
+          margin: 26px auto;
+        }
         .contact-link {
           width: 85%;
           margin: 56px auto;
-          // padding-bottom: 26px;
+          @include media('screen', '<sm') {
+            margin: 26px auto;
+          }
           h3 {
             margin-bottom: 26px;
             text-align: left;
@@ -74,6 +93,13 @@
         font-size: $LargeFontSize;
         padding: $MediumFontSize;
         transition: 0.4s;
+        @include media('screen', '<md') {
+          font-size: 1.3125rem;
+          padding: $XSmallFontSize;
+        }
+        @include media('screen', '<sm') {
+          font-size: $MediumFontSize;
+        }
       }
       button.accordion.active,
       button.accordion:hover,

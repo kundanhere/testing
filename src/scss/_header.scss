@@ -1,9 +1,16 @@
 .header {
   padding: 0.5rem 5rem; // 8px 80px;
+  @include media('screen', '<md') {
+    padding: 0.5rem 2rem;
+  }
   .nav {
     &__logo {
       img {
         height: 58px;
+        @include media('screen', '<sm') {
+          height: 48px;
+          margin-top: 3vh;
+        }
       }
     }
     &__links {

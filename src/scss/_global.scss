@@ -50,7 +50,14 @@ body {
   color: var(--cod-gray);
   background: var(--selago);
   overflow-x: hidden;
+  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
+  @include media('screen', '>sm', '<md') {
+    font-size: 90%;
+  }
+  @include media('screen', '<sm') {
+    font-size: 86%;
+  }
 }
 
 //---------- Typography -----------
@@ -140,4 +147,28 @@ a:visited {
 a:link:hover,
 a:link:focus {
   color: #066dd6;
+}
+@include media('screen', '<sm') {
+  h1,
+  .h1 {
+    font-size: $XXLargeFontSize;
+  }
+  h2,
+  .h2 {
+    font-size: $XLargeFontSize;
+  }
+  h3,
+  .h3 {
+    font-size: 2.1rem;
+  }
+}
+@include media('screen', '<xs') {
+  h1,
+  .h1 {
+    font-size: $XLargeFontSize;
+  }
+  h3,
+  .h3 {
+    font-size: 1.812rem;
+  }
 }
