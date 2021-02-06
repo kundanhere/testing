@@ -43,6 +43,15 @@
 .cta-btn {
   text-transform: uppercase;
 }
+// width styles
+.width-48 {
+  width: 100%;
+  max-width: 48px;
+}
+// pointer styles
+.cpointer {
+  cursor: pointer;
+}
 // COMPONENTS
 // divider
 .component {
@@ -62,11 +71,6 @@
 }
 .dividernav {
   margin: 36px auto 42px;
-}
-@include media('screen', '<sm') {
-  .hidden-sm {
-    display: none;
-  }
 }
 // middot
 .middot {
@@ -137,5 +141,11 @@
   }
   @include media('screen', '<xs') {
     max-width: 100%;
+  }
+}
+// visibility class
+@include media('screen', '<sm') {
+  .hidden-sm {
+    display: none;
   }
 }

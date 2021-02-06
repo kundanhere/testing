@@ -21,7 +21,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -262,7 +262,7 @@
             <div class="flex-wrap">
               <h3>Got a project?</h3>
               <h3>
-                <a href="/testing" class="link"><u>Let's Talk!</u></a>
+                <a href="javascript:void(0)" class="link"><u>Let's Talk!</u></a>
               </h3>
             </div>
           </div>
@@ -510,7 +510,7 @@
                   collaboration. I'm available for freelance work.
                 </h3>
                 <h3 class="link">
-                  <a href="/testing"
+                  <a href="javascript:void(0)"
                     >Let's build your app
                     <span>
                       <svg
@@ -536,12 +536,140 @@
           </div>
         </div>
       </section>
+      <footer id="footer" class="footer">
+        <div class="component">
+          <div class="component-content"></div>
+        </div>
+        <div class="footer__content maxwidth flex flex-jc-sb flex-ai-c">
+          <a
+            href="mailto:kundankumar8377@gmail.com"
+            class="email flex flex-ai-c"
+            title="Send an email"
+          >
+            <div class="animation-wrap">
+              <div
+                class="anim-icon width-48 cpointer"
+                data-animation-path="./src/assets/icons/mail.json"
+                data-anim-loop="false"
+                data-anim-autoplay="false"
+                data-name="mail"
+              ></div>
+            </div>
+            <p class="caption mr-0">kundankumar8377@gmail.com</p>
+          </a>
+          <small>
+            Copyright ©
+            <span id="copyright">
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </span>
+            Kundan Gupta.
+          </small>
+          <div class="social__links">
+            <div class="animation-wrap">
+              <a
+                href="https://github.com/kundanhere"
+                target="_blank"
+                title="View code on GitHub"
+              >
+                <div
+                  class="anim-icon width-48 cpointer"
+                  data-animation-path="./src/assets/icons/github.json"
+                  data-anim-loop="true"
+                  data-anim-autoplay="false"
+                  data-name="github"
+                ></div>
+              </a>
+            </div>
+            <div class="animation-wrap">
+              <a
+                href="https://www.linkedin.com/in/kundan-gupta/"
+                target="_blank"
+                title="Connect with me on LinkedIn"
+              >
+                <div
+                  class="anim-icon width-48 cpointer"
+                  data-animation-path="./src/assets/icons/linkedin.json"
+                  data-anim-loop="true"
+                  data-anim-autoplay="false"
+                  data-name="linkedin"
+                ></div>
+              </a>
+            </div>
+            <div class="animation-wrap">
+              <a
+                href="https://codepen.io/kundanhere"
+                target="_blank"
+                title="Use my Codepen projects"
+              >
+                <div
+                  class="anim-icon width-48 cpointer"
+                  data-animation-path="./src/assets/icons/codepen.json"
+                  data-anim-loop="true"
+                  data-anim-autoplay="false"
+                  data-name="codepen"
+                ></div>
+              </a>
+            </div>
+            <div class="animation-wrap">
+              <a
+                href="https://www.instagram.com/kundang25/"
+                target="_blank"
+                title="Follow me on Instagram"
+              >
+                <div
+                  class="anim-icon width-48 cpointer"
+                  data-animation-path="./src/assets/icons/instagram.json"
+                  data-anim-loop="false"
+                  data-anim-autoplay="false"
+                  data-name="instagram"
+                ></div>
+              </a>
+            </div>
+            <div class="animation-wrap email">
+              <a href="mailto:kundankumar8377@gmail.com" title="Send an email">
+                <div
+                  class="anim-icon width-48 cpointer"
+                  data-animation-path="./src/assets/icons/mail.json"
+                  data-anim-loop="false"
+                  data-anim-autoplay="false"
+                  data-name="mail"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Vendor JS -->
     <script defer src="/testing/src/vendor/js/smooth-scroll.min.js"></script>
-    <script defer src="/testing/src/vendor/js/gsap-3.4.0.min.js"></script>
     <script defer src="/testing/src/vendor/js/isotope-3.0.6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.5/lottie.min.js"></script>
     <!-- app.js -->
     <script defer src="/testing/src/js/index.js"></script>
+    <script>
+      const controls = [];
+      const animIcons = document.querySelectorAll('.anim-icon');
+
+      animIcons.forEach((icon, index) => {
+        controls.push(bodymovin.registerAnimation(icon));
+        controls[index].setSpeed(0.6);
+
+        icon.addEventListener('mouseover', startAnimation(index));
+        icon.addEventListener('mouseleave', stopAnimation(index));
+      });
+
+      function startAnimation(index) {
+        return function (evt) {
+          controls[index].play();
+        };
+      }
+      function stopAnimation(index) {
+        return function (evt) {
+          controls[index].stop();
+        };
+      }
+    </script>
   </body>
 </html>
